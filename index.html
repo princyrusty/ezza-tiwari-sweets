@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ezza by Tiwari Sweets · Almora</title>
+<meta name="description" content="Ezza by Tiwari Sweets, Almora. Pure Mandua sweets, Bal Mithai and Chocolate Barfi. Order on WhatsApp with Pan India delivery.">
+<meta name="theme-color" content="#8e2416">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%238e2416'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%23fff' stroke-width='2' stroke-dasharray='3 4'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23fff' font-family='serif'%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader" aria-hidden="true">
+  <svg class="mandala spin" viewBox="-100 -100 200 200" width="140" height="140"></svg>
+  <div class="loader-text">Ezza</div>
+</div>
+
+<!-- Header -->
+<header id="top-bar">
+  <a href="#home" class="brand">
+    <svg class="mandala mini spin-slow" viewBox="-100 -100 200 200" width="42" height="42"></svg>
+    <span><b>Ezza</b><small>by Tiwari Sweets · Almora</small></span>
+  </a>
+  <nav id="nav">
+    <a href="#story">Our Story</a>
+    <a href="#sweets">Sweets</a>
+    <a href="#purity">Purity</a>
+    <a href="#order">How to Order</a>
+  </nav>
+  <button class="cart-btn" id="openCart" aria-label="Open cart">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7h14l-1.4 11.2a2 2 0 0 1-2 1.8H8.4a2 2 0 0 1-2-1.8L5 7Z"/><path d="M9 7V5.5a3 3 0 0 1 6 0V7"/></svg>
+    <span>Cart</span><em id="cartCount">0</em>
+  </button>
+  <button class="burger" id="burger" aria-label="Menu"><i></i><i></i><i></i></button>
+</header>
+
+<main>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="sky">
+    <div class="sun"></div>
+    <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+    <svg class="birds" viewBox="0 0 120 40"><path d="M10 20q6-8 12 0q6-8 12 0M50 10q5-6 10 0q5-6 10 0M85 25q4-5 8 0q4-5 8 0"/></svg>
+  </div>
+  <svg class="mountains" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+    <path class="m1" d="M0 260 L120 150 L200 210 L330 70 L420 170 L520 110 L640 220 L760 60 L880 180 L980 120 L1100 230 L1220 90 L1340 190 L1440 140 V420 H0Z"/>
+    <path class="snow" d="M330 70 L300 105 L318 100 L330 112 L345 98 L362 106Z M760 60 L728 98 L748 92 L762 106 L776 92 L795 100Z M1220 90 L1192 124 L1210 118 L1222 130 L1236 118 L1252 124Z"/>
+    <path class="m2" d="M0 320 L160 230 L300 300 L460 200 L600 290 L760 210 L920 300 L1080 220 L1240 300 L1440 230 V420 H0Z"/>
+    <g class="pines">
+      <path d="M90 330 l14 -40 l14 40z M120 336 l12 -34 l12 34z M1300 320 l14 -42 l14 42z M1330 330 l11 -32 l11 32z M640 340 l12 -36 l12 36z"/>
+    </g>
+    <path class="m3" d="M0 370 Q 240 320 480 360 T 960 350 T 1440 340 V420 H0Z"/>
+  </svg>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Tiwari Sweets, Almora presents</p>
+      <h1><span class="dev">पहाड़ की असली मिठास</span>Ezza</h1>
+      <p class="lead">Mandua sweets, the legendary <b>Bal Mithai</b> and our signature <b>Chocolate Barfi</b>, made with purity in the hills of Kumaon and delivered across India.</p>
+      <div class="cta">
+        <a href="#sweets" class="btn btn-primary">Shop Sweets</a>
+        <a href="#" class="btn btn-ghost js-wa">
+          <svg viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.7-.3Z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <ul class="badges">
+        <li><b>Pan India</b>Delivery</li>
+        <li><b>10–15 days</b>Shelf life</li>
+        <li><b>100%</b>Pure khoya</li>
+      </ul>
+    </div>
+    <div class="hero-art reveal delay">
+      <svg class="mandala big spin-slow" viewBox="-100 -100 200 200"></svg>
+      <div class="plate"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Bal_mithai.jpg" alt="Almora Bal Mithai" loading="eager"></div>
+      <span class="tag t1">Bal Mithai</span>
+      <span class="tag t2">Mandua</span>
+      <span class="tag t3">Chocolate Barfi</span>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Pure Khoya</span><span>✦</span><span>मंडुवा मिठाई</span><span>✦</span><span>Bal Mithai</span><span>✦</span><span>Pan India Delivery</span><span>✦</span><span>चॉकलेट बर्फ़ी</span><span>✦</span><span>10–15 Days Shelf Life</span><span>✦</span><span>Made in Almora</span><span>✦</span>
+    <span>Pure Khoya</span><span>✦</span><span>मंडुवा मिठाई</span><span>✦</span><span>Bal Mithai</span><span>✦</span><span>Pan India Delivery</span><span>✦</span><span>चॉकलेट बर्फ़ी</span><span>✦</span><span>10–15 Days Shelf Life</span><span>✦</span><span>Made in Almora</span><span>✦</span>
+  </div>
+</div>
+
+<!-- Story -->
+<section id="story" class="story">
+  <div class="aipan-border"></div>
+  <div class="wrap two-col">
+    <div class="story-img reveal">
+      <div class="frame">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Almora_Hills%2C_2014.jpg" alt="Hills of Almora, Uttarakhand" loading="lazy">
+      </div>
+      <span class="stamp">Almora<br><small>Uttarakhand</small></span>
+    </div>
+    <div class="story-copy reveal delay">
+      <p class="eyebrow dark">Our Story</p>
+      <h2>From the oldest sweet shop of Almora</h2>
+      <p>For generations, <b>Tiwari Sweets</b> has been a name the people of Almora trust, known as the town's oldest sweet shop. In the lanes of this Kumaoni hill town, sweets are part of every celebration, every festival and every homecoming.</p>
+      <p><b>Ezza</b> is our new venture, created to share three of our most loved sweets with families across India: wholesome <b>Mandua</b> sweets, the iconic <b>Bal Mithai</b> and our rich <b>Chocolate Barfi</b>. Same recipes, same purity, now at your doorstep.</p>
+      <div class="sig">— The Tiwari Family, Almora</div>
+    </div>
+  </div>
+</section>
+
+<!-- Products -->
+<section id="sweets" class="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Our Specialities</p>
+      <h2>Three sweets. One pure tradition.</h2>
+      <p>Freshly made in Almora, packed with care and shipped Pan India.</p>
+    </div>
+    <div class="grid" id="productGrid"><!-- filled by JS --></div>
+  </div>
+</section>
+
+<!-- Purity -->
+<section id="purity" class="purity">
+  <div class="aipan-border"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow dark">Shuddhta · Purity</p>
+      <h2>Purity you can taste</h2>
+    </div>
+    <div class="pure-grid">
+      <div class="pure reveal"><div class="ico">🥛</div><h3>Pure khoya</h3><p>Our barfi and Bal Mithai are made from khoya cooked slowly the traditional way.</p></div>
+      <div class="pure reveal delay"><div class="ico">🌾</div><h3>Pahadi mandua</h3><p>Finger millet, the grain of the Kumaon hills, gives our Mandua sweets their earthy goodness.</p></div>
+      <div class="pure reveal"><div class="ico">🔥</div><h3>Small batches</h3><p>Made by hand in small batches in Almora, the way Tiwari Sweets always has.</p></div>
+      <div class="pure reveal delay"><div class="ico">📦</div><h3>Packed with care</h3><p>Hygienically boxed to stay fresh for <b>10–15 days</b>, ready to travel anywhere in India.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- How to order -->
+<section id="order" class="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Easy Ordering</p>
+      <h2>Order in three simple steps</h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span>1</span><h3>Choose your sweets</h3><p>Add boxes of Mandua, Bal Mithai or Chocolate Barfi to your cart.</p></li>
+      <li class="reveal delay"><span>2</span><h3>Add your address</h3><p>Fill in where you'd like it delivered, anywhere in India.</p></li>
+      <li class="reveal"><span>3</span><h3>Send on WhatsApp</h3><p>Your order opens in WhatsApp. We confirm delivery charges and payment, then ship.</p></li>
+    </ol>
+    <div class="info-row reveal">
+      <div><b>🚚 Pan India Delivery</b><span>We ship to every PIN code we can reach.</span></div>
+      <div><b>⏳ 10–15 Days Shelf Life</b><span>Best enjoyed fresh. Store in a cool, dry place.</span></div>
+      <div><b>💬 WhatsApp Support</b><span>Questions? Message us anytime.</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="aipan-border light"></div>
+  <div class="wrap foot">
+    <div>
+      <div class="brand big"><svg class="mandala mini spin-slow" viewBox="-100 -100 200 200" width="54" height="54"></svg><span><b>Ezza</b><small>by Tiwari Sweets · Almora</small></span></div>
+      <p>A venture of Tiwari Sweets, the oldest sweet shop of Almora, Uttarakhand.</p>
+    </div>
+    <div>
+      <h4>Price list</h4>
+      <ul class="plist" id="priceList"></ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Tiwari Sweets, Almora, Uttarakhand</p>
+      <a href="#" class="btn btn-primary small js-wa">Chat on WhatsApp</a>
+    </div>
+  </div>
+  <p class="credits" id="credits"></p>
+  <p class="copy">© <span id="yr"></span> Ezza by Tiwari Sweets. Made with love in the hills.</p>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="#" class="wa-float js-wa" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30"><path fill="#fff" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.7-.3Z"/></svg>
+</a>
+
+<!-- Cart drawer -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Cart">
+  <div class="drawer-head">
+    <h3>Your Mithai Box</h3>
+    <button id="closeCart" aria-label="Close cart">✕</button>
+  </div>
+  <div class="drawer-body">
+    <div id="cartItems"></div>
+    <div class="subtotal"><span>Subtotal</span><b id="subtotal">₹0</b></div>
+    <p class="muted">Delivery charges are confirmed on WhatsApp based on your PIN code.</p>
+    <form id="checkout" autocomplete="on">
+      <h4>Delivery details</h4>
+      <input name="name" placeholder="Full name *" required autocomplete="name">
+      <input name="phone" placeholder="Phone number *" required inputmode="tel" autocomplete="tel">
+      <textarea name="address" rows="2" placeholder="House, street, area *" required autocomplete="street-address"></textarea>
+      <div class="row">
+        <input name="city" placeholder="City" autocomplete="address-level2">
+        <input name="state" placeholder="State" autocomplete="address-level1">
+      </div>
+      <input name="pincode" placeholder="PIN code *" required inputmode="numeric" maxlength="6" autocomplete="postal-code">
+      <input name="note" placeholder="Note (gift message, preferred date…)">
+      <p class="err" id="err"></p>
+      <button class="btn btn-wa" type="submit" id="placeBtn">
+        <svg viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm5.9 15.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.3-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5l-.7-.3Z"/></svg>
+        Place order on WhatsApp
+      </button>
+    </form>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

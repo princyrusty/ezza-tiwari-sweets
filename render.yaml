@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ezza-tiwari-sweets
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: WHATSAPP_NUMBER
+        value: "918755655667"
+      - key: ADMIN_KEY
+        generateValue: true

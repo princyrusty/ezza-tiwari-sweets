@@ -1,7 +1,7 @@
 {
   "name": "ezza-by-tiwari-sweets",
   "version": "1.0.0",
-  "description": "Ezza by Tiwari Sweets, Almora - Mandua sweets, Bal Mithai and Chocolate Barfi with WhatsApp ordering",
+  "description": "Ezza by Tiwari Sweets, Champawat - Mandua sweets, Bal Mithai and Chocolate Barfi with WhatsApp ordering",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

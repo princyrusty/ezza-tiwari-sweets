@@ -94,7 +94,7 @@
             <div class="qty"><button data-d="-1" aria-label="Decrease">−</button><span>1</span><button data-d="1" aria-label="Increase">+</button></div>
             <button class="add">Add to cart</button>
           </div>
-          <div class="credit">${p.credit}</div>
+          ${p.credit ? `<div class="credit">${p.credit}</div>` : ""}
         </div>
       </article>`
     ).join("");
@@ -119,7 +119,7 @@
     });
 
     $("#priceList").innerHTML = PRODUCTS.map((p) => `<li><span>${p.name} (${p.unit})</span><b>${rupee(p.price)}</b></li>`).join("");
-    $("#credits").textContent = "Images: " + PRODUCTS.map((p) => p.credit.replace("Photo: ", "")).join(" · ") + " · Almora hills: Pradeepwb, CC BY-SA 4.0";
+    $("#credits").textContent = "Images: " + PRODUCTS.filter((p) => p.credit).map((p) => p.credit.replace("Photo: ", "")).join(" · ") + " · Champawat town: WhiteRaven335, CC BY-SA 4.0";
     watch();
   }
 
@@ -139,7 +139,7 @@
     $("#cartCount").textContent = count;
     const box = $("#cartItems");
     if (!ids.length) {
-      box.innerHTML = `<div class="empty"><svg class="mandala" viewBox="-100 -100 200 200" width="80" height="80">${mSvg}</svg>Your mithai box is empty.<br>Add some sweetness from Almora!</div>`;
+      box.innerHTML = `<div class="empty"><svg class="mandala" viewBox="-100 -100 200 200" width="80" height="80">${mSvg}</svg>Your mithai box is empty.<br>Add some sweetness from Champawat!</div>`;
     } else {
       box.innerHTML = ids.map((id) => {
         const p = PRODUCTS.find((x) => x.id === id);

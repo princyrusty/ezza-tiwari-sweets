@@ -1,4 +1,4 @@
-// Ezza by Tiwari Sweets, Almora — Express backend
+// Ezza by Tiwari Sweets, Champawat — Express backend
 // Serves the storefront, the product catalogue API and the WhatsApp order API.
 
 const express = require("express");
@@ -25,7 +25,7 @@ const PRODUCTS = [
     unit: "1 kg box",
     tagline: "Rich khoya barfi layered with smooth chocolate",
     description:
-      "Slow-cooked khoya, fine cocoa and a soft, melt-in-the-mouth bite. A modern favourite made the old Almora way.",
+      "Slow-cooked khoya, fine cocoa and a soft, melt-in-the-mouth bite. A modern favourite made the old pahadi way.",
     image: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Quick_fudge_-_six_squares.jpg",
     credit: "Photo: Simon Cousins, CC BY 2.0, via Wikimedia Commons",
     accent: "#5a2e1b"
@@ -48,13 +48,12 @@ const PRODUCTS = [
     name: "Mandua Sweets",
     hindi: "मंडुवा मिठाई",
     price: 300,
-    unit: "per box",
+    unit: "300 g box",
     tagline: "Wholesome finger-millet sweets from the hills",
     description:
-      "Mandua (finger millet), a pahadi staple, turned into a nourishing sweet. Earthy, wholesome and full of tradition.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Ragi_laddu_-_Finger_Millet_Laddu.jpg/960px-Ragi_laddu_-_Finger_Millet_Laddu.jpg",
-    credit: "Photo: Nskjnv, CC BY-SA 4.0, via Wikimedia Commons",
+      "Mandua (finger millet), a pahadi staple, turned into a soft, wholesome barfi finished with almonds and pistachios.",
+    image: "/mandua.jpg",
+    credit: "",
     accent: "#3d2a22"
   }
 ];
@@ -63,7 +62,7 @@ const MAX_QTY = 50;
 
 app.use(express.json({ limit: "20kb" }));
 // Static front-end files (kept in the repo root for simple uploads)
-const STATIC = { "/styles.css": "styles.css", "/app.js": "app.js" };
+const STATIC = { "/styles.css": "styles.css", "/app.js": "app.js", "/mandua.jpg": "mandua.jpg", "/hero.jpg": "hero.jpg" };
 for (const [route, file] of Object.entries(STATIC)) {
   app.get(route, (_req, res) => res.sendFile(path.join(__dirname, file), { maxAge: "1h" }));
 }

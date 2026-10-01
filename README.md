@@ -1,4 +1,4 @@
-# Ezza by Tiwari Sweets, Almora
+# Ezza by Tiwari Sweets, Champawat
 
 Full-stack storefront (Node.js + Express) for Mandua sweets, Bal Mithai and Chocolate Barfi, with WhatsApp ordering and Pan India delivery.
 
